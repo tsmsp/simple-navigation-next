@@ -1,5 +1,5 @@
 {
-  "name": "alura-case",
+  "name": "simple-navigation-next",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/tsmDevProjects/alura-case.git",
@@ -9,5 +9,16 @@
     "next": "^13.4.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build && next export",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "devDependencies": {
+    "eslint": "8.42.0",
+    "eslint-config-next": "13.4.4"
   }
 }
