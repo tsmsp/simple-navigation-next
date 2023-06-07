@@ -1,0 +1,13 @@
+{
+  "name": "alura-case",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/tsmDevProjects/alura-case.git",
+  "author": "tsmsp <tsm_sp@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^13.4.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
