@@ -1,10 +1,6 @@
+import React from "react";
 import Link from "../src/components/Link";
+import Footer from "../src/components/patterns/Footer/index";
+import HomeScreen from "../src/screens/HomeScreen/index";
 
-export default function HomePage() {
-  return (
-    <div>
-      <h1>Home</h1>
-      <Link href="/faq">To go page Faq</Link>
-    </div>
-  );
-}
+export default HomeScreen;
