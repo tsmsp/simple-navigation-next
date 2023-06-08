@@ -1,5 +1,6 @@
 // @ts-nocheck
 
+import Head from "next/head";
 import Footer from "../../components/patterns/Footer";
 
 import Link from "../../components/Link";
@@ -99,6 +100,9 @@ function SideImage() {
 export default function HomeScreen() {
   return (
     <Box>
+      <Head>
+        <title>Super Pepper</title>
+      </Head>
       <Box
         as="main"
         styleSheet={{
