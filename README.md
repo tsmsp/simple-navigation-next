@@ -4,9 +4,8 @@
 Before you begin, make sure you have the following installed on your system:
 
 
+[Demo]([https://www.example.com](https://simple-navigation-next-crcl.vercel.app/)) click here for visit projet.
 
-For example:
-[demo]([https://simple-navigation-next-crcl.vercel.app/])
 
 Node.js: version 12 or higher
 NPM (Node Package Manager) or Yarn
