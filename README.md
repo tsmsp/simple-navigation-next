@@ -6,7 +6,7 @@ Before you begin, make sure you have the following installed on your system:
 [Link text](Link)
 
 For example:
-[demo]([https://www.google.com](https://simple-navigation-next-crcl.vercel.app/))
+[demo]([https://simple-navigation-next-crcl.vercel.app/])
 
 Node.js: version 12 or higher
 NPM (Node Package Manager) or Yarn
