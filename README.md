@@ -18,6 +18,8 @@ Clone this repo and use it as a starting point for your own blog.
 
 **NOTE:** Make sure to run `npm complete` before `npm start` for the first time.
 
+## Step 2: Install the dependencies
+
 ## Install dependencies
 
 ```sh
@@ -35,6 +37,7 @@ npm run build:content
 ```sh
 npm start
 ```
+## Step 3: Install the dependencies
 
 ## Build for production
 
