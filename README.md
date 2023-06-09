@@ -6,7 +6,7 @@ Before you begin, make sure you have the following installed on your system:
 Node.js: version 12 or higher
 NPM (Node Package Manager) or Yarn
 
-# Step 1: Clone the repository
+## Step 1: Clone the repository
 Open the terminal or command prompt.
 
 Navigate to the directory where you want to clone the repository.
