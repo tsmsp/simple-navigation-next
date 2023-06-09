@@ -1,4 +1,4 @@
-import FAQScreen from "../src/screens/FaqScreen/index";
+import FAQScreen from "../src/screens/FaqScreen";
 
 export default FAQScreen;
 
@@ -14,7 +14,7 @@ export async function getStaticProps() {
   //This function fetches the data during the build. In other words, this function is executed only once.
   console.log("getStaticProps, runs ONLY at build time.");
   const FAQ_API_URL =
-    "https://gist.githubusercontent.com/omariosouto/0ceab54bdd8182cbd1a4549d32945c1a/raw/578ad1e8e5296fa048e3e7ff6b317f7497b31ad9/alura-cases-faq.json";
+    "https://gist.githubusercontent.com/tsmsp/8a96565c056d633c27f8fecf0f1e3626/raw/7c59d62435398e6a496436d41d42ae6988ad66ab/super-pepper.json";
 
   const faq = await fetch(FAQ_API_URL)
     .then((respostaDoServidor) => {
