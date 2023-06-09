@@ -1,8 +1,12 @@
 // FAQScreen.js
+// @ts-ignore
 import Footer from "../../components/patterns/Footer";
+// @ts-ignore
 import Link from "../../components/Link";
 import { theme } from "../../theme/theme";
-import { Box, Text } from "../../theme/components";
+import { Box, Text, Image } from "../../theme/components";
+
+const LOGO = "/images/logo.png";
 
 export default function FAQScreen({ faq }) {
   return (
@@ -11,6 +15,14 @@ export default function FAQScreen({ faq }) {
         backgroundColor: theme.colors.neutral["050"],
       }}
     >
+      <Image
+        styleSheet={{
+          width: theme.space.x40,
+          height: "auto",
+        }}
+        src={LOGO}
+        alt="Logo"
+      />
       <Box
         as="main"
         styleSheet={{
@@ -44,10 +56,10 @@ export default function FAQScreen({ faq }) {
               as="h2"
               styleSheet={{
                 textVariant: theme.typography.variants.heading2,
-                color: theme.colors.neutral[900],
+                color: theme.colors.primary[900],
               }}
             >
-              FAQ: Perguntas Frequentes
+              FAQ: Frequently Asked Questions
             </Text>
             <Text
               as="p"
@@ -57,18 +69,17 @@ export default function FAQScreen({ faq }) {
                 color: theme.colors.neutral[500],
               }}
             >
-              Não consegue encontrar a resposta que procura? entre em contato
-              com nosso{" "}
+              Can't find the answer you're looking for? Contact our{" "}
               <Link
-                href="mailto:contato@alura.com.br"
+                href="mailto:info@supperpper.com"
                 styleSheet={{
                   color: theme.colors.primary[400],
                   hover: {
-                    color: theme.colors.primary[300],
+                    color: theme.colors.primary[600],
                   },
                 }}
               >
-                time de suporte ao consumidor
+                customer support team
               </Link>
             </Text>
 
@@ -90,7 +101,7 @@ export default function FAQScreen({ faq }) {
                   },
                 }}
               >
-                Voltar para home
+                Back to Home
               </Link>
             </Text>
           </Box>
@@ -142,7 +153,7 @@ export default function FAQScreen({ faq }) {
                   styleSheet={{
                     marginTop: theme.space.x1,
                     textVariant: theme.typography.variants.body1,
-                    color: theme.colors.neutral[500],
+                    color: theme.colors.primary[900],
                   }}
                 >
                   Talvez ainda não existam dúvidas frequentes.
@@ -153,15 +164,17 @@ export default function FAQScreen({ faq }) {
               {faq.map((faq) => (
                 <Box
                   key={faq.question}
-                  styleSheet={{
-                    marginBottom: theme.space.x12,
+                  stylesheet={{
+                    marginTop: theme.space.x0,
+                    color: theme.colors.primary[200],
                   }}
                 >
                   <Text
                     as="dt"
                     styleSheet={{
+                      marginTop: theme.space.x12,
                       textVariant: theme.typography.variants.heading4,
-                      color: theme.colors.neutral[900],
+                      color: theme.colors.primary[900],
                     }}
                   >
                     {faq.question}
@@ -169,9 +182,9 @@ export default function FAQScreen({ faq }) {
                   <Text
                     as="dd"
                     styleSheet={{
-                      marginTop: theme.space.x2,
+                      marginTop: theme.space.x3,
                       textVariant: theme.typography.variants.body1,
-                      color: theme.colors.neutral[500],
+                      color: theme.colors.primary[200],
                     }}
                   >
                     {faq.answer}
