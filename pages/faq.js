@@ -1,5 +1,10 @@
-import Head from "next/head";
-import Link from "../src/components/Link";
+import FAQScreen from "../src/screens/FaqScreen/index";
+
+export default FAQScreen;
+
+// SSG - Static Site Generation
+// SSR - Server Side Rendering
+// ISG - Incremental Static Generation
 
 // export async function getServerSideProps() {
 //This function fetches server-side data for each request.
@@ -15,8 +20,8 @@ export async function getStaticProps() {
     .then((respostaDoServidor) => {
       return respostaDoServidor.json();
     })
-    .then((resposta) => {
-      return resposta;
+    .then((Response) => {
+      return Response;
     });
 
   return {
@@ -24,24 +29,4 @@ export async function getStaticProps() {
       faq,
     },
   };
-}
-
-export default function FaqPage({ faq }) {
-  return (
-    <div>
-      <Head>
-        <title>Super Pepper FAQ</title>
-      </Head>
-      <h1>Super Pepper FAQ</h1>
-      <Link href="/">To go Home</Link>
-      <ul key={faq}>
-        {faq.map(({ answer, question }) => (
-          <article>
-            <h2>{question}</h2>
-            <p>{answer}</p>
-          </article>
-        ))}
-      </ul>
-    </div>
-  );
 }
