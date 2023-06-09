@@ -216,6 +216,7 @@ export default function HomeScreen() {
                         styleSheet={{
                           iconVariant: "chevronRight",
                           marginLeft: theme.space.xpx,
+                          fontSize: 10,
                         }}
                         aria-hidden="true"
                       />
@@ -307,7 +308,8 @@ export default function HomeScreen() {
                       marginTop: theme.space.x6,
                     }}
                   >
-                    Quer testar antes de todo mundo?
+                    Craving delicious pizza? Contact us now to satisfy your
+                    taste buds with our mouthwatering pizza creations!
                   </Text>
                 </Box>
                 <Box
