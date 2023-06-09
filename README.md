@@ -1,6 +1,16 @@
 # simple-navigation-next
 
-Markdown based blog using [next](https://github.com/zeit/next.js/). It also uses [processmd](https://github.com/tscanlin/processmd) to compile the markdown files and watch for changes (disclaimer: another project of mine).
+Prerequisites
+Before you begin, make sure you have the following installed on your system:
+
+Node.js: version 12 or higher
+NPM (Node Package Manager) or Yarn
+Step 1: Clone the repository
+Open the terminal or command prompt.
+
+Navigate to the directory where you want to clone the repository.
+
+Run the following command to clone the repository:
 
 [![Mentioned in Awesome Next JS](https://awesome.re/mentioned-badge.svg)](https://github.com/unicodeveloper/awesome-nextjs)
 
