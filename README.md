@@ -5,7 +5,7 @@ Before you begin, make sure you have the following installed on your system:
 
 [Texto do link](URL_do_link)
 
-[Demo]([https://www.example.com](https://simple-navigation-next-crcl.vercel.app/)) click here for visit projet.
+[Demo]([[https://www.example.com](https://simple-navigation-next-crcl.vercel.app/](https://simple-navigation-next-crcl.vercel.app/))) click here for visit projet.
 
 
 Node.js: version 12 or higher
