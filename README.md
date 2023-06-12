@@ -29,7 +29,7 @@ npm install
 ## Build content
 
 ```sh
-npm run build:content
+npm run build
 ```
 
 ## Run development server
