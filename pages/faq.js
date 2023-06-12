@@ -17,8 +17,8 @@ export async function getStaticProps() {
     "https://gist.githubusercontent.com/tsmsp/8a96565c056d633c27f8fecf0f1e3626/raw/7c59d62435398e6a496436d41d42ae6988ad66ab/super-pepper.json";
 
   const faq = await fetch(FAQ_API_URL)
-    .then((respostaDoServidor) => {
-      return respostaDoServidor.json();
+    .then((responseServer) => {
+      return responseServer.json();
     })
     .then((Response) => {
       return Response;
